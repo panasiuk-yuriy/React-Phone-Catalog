@@ -95,7 +95,7 @@ export const ProductInfo = () => {
                 </div>
                 <div className="Product__specs">
                   {PRODUCT_SPEC.map(spec => (
-                    <div className="Product__group">
+                    <div className="Product__group" key={spec.spec}>
                       <p className="Product__spec-name">{spec.spec}</p>
                       <p className="Product__spec-info">{spec.field || 'No information'}</p>
                     </div>

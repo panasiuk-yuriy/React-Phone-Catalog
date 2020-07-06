@@ -2,11 +2,13 @@
 
 .Cart {
   display: flex;
-
+  @media screen and (max-width: $phone-breakpoint) {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
 
   &__items {
     margin-right: 16px;
-    transition: 1s;
   }
 
   &__noitems {
@@ -27,12 +29,13 @@
     margin-bottom: 16px;
     display: flex;
     align-items: center;
-    height: 128px;
     padding: 24px;
     border: 1px solid $light-gray;
     box-sizing: border-box;
-    transition: 0.3s;
-    transition: 1s;
+    @media screen and (max-width: $tablet-breakpoint) {
+      flex-direction: column;
+    }
+
   }
 
   &__item:hover {
@@ -42,6 +45,11 @@
   &__name {
     margin: 0 48px 0 24px;
     width: 300px;
+    @media screen and (max-width: $desktop-breakpoint) {
+      text-align: center;
+      width: 100%;
+      margin: 20px 20px;
+    }
   }
 
 
@@ -49,6 +57,10 @@
     justify-self: left;
     width: 80px;
     height: 80px;
+    @media screen and (max-width: $tablet-breakpoint) {
+      width: 120px;
+      height: 120px;
+    }
   }
 
   &__counter {
@@ -57,21 +69,31 @@
   }
 
   &__button_close {
-    width: 16px;
-    height: 16px;
+    width: 30px;
+    height: 30px;
     background: url('../images/Close.svg');
+    background-repeat: no-repeat;
+    background-position: center;
     margin-right: 30px;
     border: none;
-    transition: 0.3s;
+    @media screen and (max-width: $tablet-breakpoint) {
+      align-self: flex-end;
+      margin-right: 0;
+    }
   }
 
   &__button_close:hover {
     background: url('../images/CloseHover.svg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &__price {
     position: relative;
     margin-left: 43px;
+    @media screen and (max-width: $tablet-breakpoint) {
+      margin: 20px 0;
+    }
   }
 
   &__price_discount {
@@ -93,6 +115,9 @@
     width: 100%;
     height: 100%;
     border: 1px solid #E2E6E9;
+    @media screen and (max-width: $desktop-breakpoint) {
+      width: 60%;
+    }
   }
 }
 
@@ -126,7 +151,7 @@
 .total {
   &__button {
     outline: none;
-    width: 320px;
+    width: 100%;
     height: 48px;
     background: #313237;
     border: none;

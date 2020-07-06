@@ -1,3 +1,5 @@
+@import "../utils/vairables";
+
 .Favourites {
   &__container {
     display: grid;
@@ -5,6 +7,17 @@
     margin-top: 40px;
     grid-column-gap: 20px;
     grid-row-gap: 40px;
+    @media screen and (max-width: $desktop-breakpoint) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: $phone-breakpoint) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__noproducts{
