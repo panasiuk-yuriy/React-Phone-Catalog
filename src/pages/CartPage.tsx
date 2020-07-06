@@ -47,7 +47,7 @@ export const CardPage = () => {
                   <p className="total__items">{`Total for ${cartProducts.length} items`}</p>
                   <p className="total__discount">{`discount: $${totalDiscount}`}</p>
                   <div className="line" style={{ height: '1px', width: '100%', backgroundColor: '#E2E6E9' }} />
-                  <a href="https://api.fondy.eu/api/checkout?button=ag781ui3s09k6ccmdk6bsxjyc52jafgo">
+                  <a className="total__button" href="https://api.fondy.eu/api/checkout?button=ag781ui3s09k6ccmdk6bsxjyc52jafgo">
                     <button className="total__button" type="button">Checkout</button>
                   </a>
                 </div>

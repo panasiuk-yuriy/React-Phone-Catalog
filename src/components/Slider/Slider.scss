@@ -17,10 +17,19 @@
     height: 400px;
     width: 1040px;
     overflow: hidden;
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      height: 250px;
+      width: 100%;
+    }
   }
 
   &__item {
     list-style: none;
+  }
+
+  &__img {
+    height: 100%;
   }
     &__btn {
       cursor: pointer;
@@ -28,17 +37,27 @@
       border: 1px solid #B4BDC4;
       width: 32px;
       height: 400px;
+      @media screen and (max-width: $tablet-breakpoint) {
+        height: 250px;
+      }
 
       &_next {
         background: url('./btn-next.svg');
         background-repeat: no-repeat;
         background-position: center;
+
+        @media screen and (max-width: $tablet-breakpoint) {
+          margin-left: 15px;
+        }
       }
 
       &_prev {
         background: url('./btn-prev.svg');
         background-repeat: no-repeat;
         background-position: center;
+        @media screen and (max-width: $tablet-breakpoint) {
+          margin-right: 15px;
+        }
       }
   }
 
