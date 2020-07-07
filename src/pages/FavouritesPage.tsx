@@ -20,7 +20,7 @@ export const FavoritesPage = () => {
             ? (
               <div className="wrapper">
                 <GoBackButton />
-                <h1>No favourites products yet</h1>
+                <h1 className="Favourites__noproducts">No favourites products yet</h1>
               </div>
             ) : (
               <>
