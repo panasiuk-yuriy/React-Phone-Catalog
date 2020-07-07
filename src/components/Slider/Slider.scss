@@ -19,8 +19,11 @@
     overflow: hidden;
 
     @media screen and (max-width: $tablet-breakpoint) {
-      height: 250px;
+      height: 300px;
       width: 100%;
+    }
+    @media screen and (max-width: $phone-breakpoint) {
+      height: 200px;
     }
   }
 
@@ -30,6 +33,10 @@
 
   &__img {
     height: 100%;
+
+    @media screen and (max-width: $phone-breakpoint) {
+     
+    }
   }
     &__btn {
       cursor: pointer;
@@ -38,7 +45,11 @@
       width: 32px;
       height: 400px;
       @media screen and (max-width: $tablet-breakpoint) {
-        height: 250px;
+        height: 300px;
+      }
+
+      @media screen and (max-width: $phone-breakpoint) {
+        height: 200px;
       }
 
       &_next {

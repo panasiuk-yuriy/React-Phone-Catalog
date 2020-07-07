@@ -5,7 +5,7 @@ import './Footer.scss';
 const footerLinks = [
   {
     link: 'GITHUB',
-    url: 'https://github.com/fe-feb20-team6/react_phone-catalog',
+    url: 'https://github.com/fe-feb20-team6/react_phone-catalog/tree/develop',
   },
   {
     link: 'CONTACTS',

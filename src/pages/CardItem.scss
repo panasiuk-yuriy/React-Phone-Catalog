@@ -9,6 +9,11 @@
 
   &__items {
     margin-right: 16px;
+
+    @media screen and (max-width: $phone-breakpoint) {
+      margin-right: 0;
+      width: 100%;
+      }
   }
 
   &__noitems {
