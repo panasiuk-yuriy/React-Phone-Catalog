@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "keywords": [],
-  "author": "Mate Academy",
+  "author": "Yuriy Panasiuk & Kochatkov Vladislav",
   "license": "GPL-3.0",
   "dependencies": {
     "@types/classnames": "^2.2.10",
